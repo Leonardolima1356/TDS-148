@@ -52,3 +52,37 @@ function media(){
         msg.style.color = "red"
     }
 }
+
+function imc(){
+    var peso = parseFloat(document.getElementById("peso").value)
+    var altura = parseFloat(document.getElementById("altura").value)
+    var resPeso = document.getElementById("resPeso")
+    var msgPeso = document.getElementById("msgPeso")
+    var imc = peso / (altura * altura)
+
+    if(imc >= 40){
+        resPeso.textContent = imc.toFixed(1)
+        msgPeso.textContent = "Obesidade grau 3"
+        msgPeso.style.color = "red"
+    }else if(imc >= 35 && imc<= 39){
+        resPeso.textContent = imc.toFixed(1)
+        msgPeso.textContent = "Obesidade grau 2"
+        msgPeso.style.color = "orangered"
+    }else if(imc >= 30 && imc<= 34.9){
+        resPeso.textContent = imc.toFixed(1)
+        msgPeso.textContent = "Obesidade grau 1"
+        msgPeso.style.color = "orangered"
+    }else if(imc >= 25 && imc<= 29.9){
+        resPeso.textContent = imc.toFixed(1)
+        msgPeso.textContent = "Sobrepeso"
+        msgPeso.style.color = "orange"
+    }else if(imc >= 20 && imc<= 24.9){
+        resPeso.textContent = imc.toFixed(1)
+        msgPeso.textContent = "Normal"
+        msgPeso.style.color = "green"
+    }else if(imc<= 19.9){
+        resPeso.textContent = imc.toFixed(1)
+        msgPeso.textContent = "Abaixo do normal"
+        msgPeso.style.color = "blue"
+    }
+}

@@ -86,3 +86,21 @@ function imc(){
         msgPeso.style.color = "lightblue"
     }
 }
+
+function baladinha(){
+    var ano = parseFloat(document.getElementById("ano").value)
+    var residade = document.getElementById("residade")
+    var msgi = document.getElementById("msgi")
+    var entrada = 2025 - ano
+
+    if(entrada >= 18){
+        residade.textContent = entrada
+        msgi.textContent = "Pode entrar."
+        msgi.style.color = "green"
+    }else {
+        residade.textContent = entrada
+        msgi.textContent = "Não pode entrar."
+        msgi.style.color = "red"
+    }
+    console.log(typeof entrada)
+}

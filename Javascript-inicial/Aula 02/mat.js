@@ -31,3 +31,24 @@ function dividir(){
         document.getElementById("n8").style.border = "2px solid red"
     }
 }
+
+function media(){
+    var m1 = parseFloat(document.getElementById("m1").value)
+    var m2 = parseFloat(document.getElementById("m2").value)
+    var m3 = parseFloat(document.getElementById("m3").value)
+    var m4 = parseFloat(document.getElementById("m4").value)
+    var m5 = parseFloat(document.getElementById("m5").value)
+    var media = document.getElementById("respMedia")
+    var msg = document.getElementById("msg")
+    var res =(m1 + m2 + m3 + m4 + m5)/5
+
+    if(res >= 7){
+        media.textContent = res
+        msg.textContent = "passou!"
+        msg.style.color = "green"
+    }else{
+        media.textContent = res
+        msg.textContent = "reprovou!"
+        msg.style.color = "red"
+    }
+}

@@ -83,6 +83,6 @@ function imc(){
     }else if(imc<= 19.9){
         resPeso.textContent = imc.toFixed(1)
         msgPeso.textContent = "Abaixo do normal"
-        msgPeso.style.color = "blue"
+        msgPeso.style.color = "lightblue"
     }
 }

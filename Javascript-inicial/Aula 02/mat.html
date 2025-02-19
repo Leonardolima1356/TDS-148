@@ -4,50 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matematica</title>
-        <link ret="stylesheet" href="mat.css">
+        <link rel="stylesheet" href="mat.css">
 </head>
 <body>
     <h1>Contas matemáticas</h1>
+    <main>
+        <section>
+            <h2>Soma</h2>
+            <label for="n1">Primeiro Número:</label>
+            <input type="text" id="n1" placeholder="Digite o primeiro número">
+            <label for="n2">Segundo Número:</label>
+            <input type="text" id="n2" placeholder="Digite o segundo número">
+            <button onclick="somar()">SOMAR</button>
+            <p>Resultado: <span id="res"></span></p>
+        </section>
     
-    <section>
-        <h2>Soma</h2>
-        <label for="n1">Primeiro Número:</label><br>
-        <input type="text" id="n1" placeholder="Digite o primeiro número"><br>
-        <label for="n2">Segundo Número:</label><br>
-        <input type="text" id="n2" placeholder="Digite o segundo número"><br>
-        <button onclick="somar()">SOMAR</button><br>
-        <p>Resultado: <span id="res"></span></p>
-    </section>
-
-    <section>
-        <h2>Subtração</h2>
-        <label for="n3">Primeiro Número:</label><br>
-        <input type="text" id="n3" placeholder="Digite o primeiro número"><br>
-        <label for="n4">Segundo Número:</label><br>
-        <input type="text" id="n4" placeholder="Digite o segundo número"><br>
-        <button onclick="subtrair()">SUBTRAIR</button><br>
-        <p>Resultado: <span id="resSub"></span></p>
-    </section>
-
-    <section>
-        <h2>Multiplicação</h2>
-        <label for="n5">Primeiro Número:</label><br>
-        <input type="text" id="n5" placeholder="Digite o primeiro número"><br>
-        <label for="n6">Segundo Número:</label><br>
-        <input type="text" id="n6" placeholder="Digite o segundo número"><br>
-        <button onclick="multiplicar()">MULTIPLICAR</button><br>
-        <p>Resultado: <span id="resMul"></span></p>
-    </section>
-
-    <section>
-        <h2>Divisão</h2>
-        <label for="n7">Primeiro Número:</label><br>
-        <input type="text" id="n7" placeholder="Digite o primeiro número"><br>
-        <label for="n8">Segundo Número:</label><br>
-        <input type="text" id="n8" placeholder="Digite o segundo número"><br>
-        <button onclick="dividir()">DIVIDIR</button><br>
-        <p>Resultado: <span id="resDiv"></span></p>
-    </section>
+        <section>
+            <h2>Subtração</h2>
+            <label for="n3">Primeiro Número:</label>
+            <input type="text" id="n3" placeholder="Digite o primeiro número">
+            <label for="n4">Segundo Número:</label>
+            <input type="text" id="n4" placeholder="Digite o segundo número">
+            <button onclick="subtrair()">SUBTRAIR</button>
+            <p>Resultado: <span id="resSub"></span></p>
+        </section>
+    
+        <section>
+            <h2>Multiplicação</h2>
+            <label for="n5">Primeiro Número:</label>
+            <input type="text" id="n5" placeholder="Digite o primeiro número">
+            <label for="n6">Segundo Número:</label>
+            <input type="text" id="n6" placeholder="Digite o segundo número">
+            <button onclick="multiplicar()">MULTIPLICAR</button>
+            <p>Resultado: <span id="resMul"></span></p>
+        </section>
+    
+        <section>
+            <h2>Divisão</h2>
+            <label for="n7">Primeiro Número:</label>
+            <input type="text" id="n7" placeholder="Digite o primeiro número">
+            <label for="n8">Segundo Número:</label>
+            <input type="text" id="n8" placeholder="Digite o segundo número">
+            <button onclick="dividir()">DIVIDIR</button>
+            <p>Resultado: <span id="resDiv"></span></p>
+        </section>
+    </main>
     
     <script src="mat.js"></script>
 </body>

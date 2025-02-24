@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+section{
+    height: 60vh;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+
+.title{
+    width: 600px;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    width: 400px;
+}

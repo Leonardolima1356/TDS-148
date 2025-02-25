@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.img-logo{
+    width: 50px;
+    height: auto;
+}
+
+section{
+    height: 100vh;
+}
+
+#s1{
+    padding-top: 80px;
+    background-image: url(./Assets/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+}
+
+.s1-left{
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    overflow: auto;
+    border-radius: 10vh;
+}
+
+.s1-right{
+    
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    width: 400px;
+    text-align: justify;
+}
+
+.wrap-image{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 400px;
+}
+
+.img-s1{
+    border-radius: 10vh;
+}

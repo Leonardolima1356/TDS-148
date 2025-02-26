@@ -9,14 +9,15 @@
     height: auto;
 }
 
-section{
+/* section{
     height: 100vh;
-}
+} */
 
 #s1{
     padding-top: 80px;
     background-color: #f7d7cd;
     flex-direction: column;
+    height: 100vh;
 }
 
 .s1-img{
@@ -43,13 +44,15 @@ section{
 .texto-barbie{
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-end;
     text-align: left;
-    width: 400px;
+    width: 500px;
     position: relative;
-    top: -350px;
+    top: -380px;
+    font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
+    color: #683d62;
+    margin-left: 10%;
 }
 
 .wrap-image{
@@ -61,4 +64,89 @@ section{
 
 .img-s1{
     border-radius: 10vh;
+}
+
+.carousel-item{
+    width: 50%;
+    height: 1000px;
+    object-fit: cover;
+    font-size: 22px;
+}
+
+.descricao-barbie{
+    position: relative;
+    top: -300px;
+    color: #f8c7c9;
+    text-shadow: 0 0 5px black, 0 0 10px black, 0 0 20px black, 0 0 40px black, 0 0 80px black;
+}
+
+#s2{
+    height: 100vh;
+}
+
+#s3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 100px;
+    flex-wrap: wrap;
+    gap: 40px;
+    background-image: linear-gradient(#f3e7d7, #e0c0c7);
+    text-align: center;
+    height: 100vh;
+}
+
+.cartao{
+    background-color: #f8c7c9;
+    width: 16rem;
+    height: 450px;
+    border: 2px solid #c7b9c5;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    gap: 2vh;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 150ms ease-in-out;
+}
+
+.cartao:hover{
+    background-image: linear-gradient(#f8c7c9, #f3e7d7);
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+.wrap-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px; 
+}
+
+#s4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 100px;
+    flex-wrap: wrap;
+    gap: 40px;
+    background-image: linear-gradient(#e0c0c7, #f8c7c9);
+    text-align: center;
+    height: 100vh;
+}
+
+.cartao2{
+    background-color: #f8c7c9;
+    width: 16rem;
+    height: 450px;
+    border: 2px solid #c7b9c5;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    gap: 2vh;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 150ms ease-in-out;
 }

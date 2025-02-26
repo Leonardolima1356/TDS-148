@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 .img-logo{
@@ -14,27 +15,41 @@ section{
 
 #s1{
     padding-top: 80px;
-    background-image: url(./Assets/background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #f7d7cd;
     flex-direction: column;
 }
 
-.s1-left{
+.s1-img{
     display: flex;
-    align-items: right;
+    align-items: center;
+    padding-top: 8%;
     justify-content: right;
-    overflow: auto;
     border-radius: 10vh;
 }
 
-.s1-right{
-    
+.title-name{
     display: flex;
-    align-items: left;
-    justify-content: left;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    width: 700px;
+    position: relative;
+    top: -400px;
+    font-size: 80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+.texto-barbie{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
     width: 400px;
-    text-align: justify;
+    position: relative;
+    top: -350px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
 }
 
 .wrap-image{
